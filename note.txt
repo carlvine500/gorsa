@@ -1,0 +1,4 @@
+// java file path: META-INF.native
+go build -buildmode=c-shared -o rsautil.so main.go
+go build -buildmode=c-shared -v -o librsautil.dylib  main.go
+GOOS=linux GOARCH=arm64 go build -buildmode=c-shared -v -o librsautil_x86_64.jnilib  main.go
