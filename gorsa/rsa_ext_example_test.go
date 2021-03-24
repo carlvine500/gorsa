@@ -9,9 +9,9 @@ import (
 	"time"
 )
 
-var publicKeyPem, _ = ioutil.ReadFile("../resources/rsa_public_key.pem")
-var privateKeyPem, _ = ioutil.ReadFile("../resources/rsa_private_pkcs8.pem")
-var fileContent, _ = ioutil.ReadFile("../resources/access.log")
+var publicKeyPem, _ = ioutil.ReadFile("../javarsa/rsa_public_key.pem")
+var privateKeyPem, _ = ioutil.ReadFile("../javarsa/rsa_private_pkcs8.pem")
+var fileContent, _ = ioutil.ReadFile("../javarsa/access.log")
 
 func init() {
 	if err := RSA.SetPublicKey(string(publicKeyPem)); err != nil {
