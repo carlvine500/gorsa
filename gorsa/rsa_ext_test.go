@@ -1,7 +1,6 @@
 package gorsa
 // copy from https://github.com/farmerx/gorsa
 import (
-	"golang.org/x/exp/errors/fmt"
 	"testing"
 )
 
@@ -75,7 +74,6 @@ func Test_PubENCTYPTPriDECRYPT(t *testing.T) {
 	}
 
 	pridecrypt, err := RSA.PriKeyDECRYPT(pubenctypt)
-	fmt.Println(string(pridecrypt))
 	if err != nil {
 		t.Error(err)
 	}

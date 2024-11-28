@@ -1,0 +1,9 @@
+*.arm64
+*.amd64
+*.zip
+*.tar
+*.gz
+*/target/*
+*.iml
+*/.idea/*
+.DS_Store
